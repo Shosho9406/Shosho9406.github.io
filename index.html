@@ -1,261 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Valentine's Day</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: url('C:/Users/User/Downloads/Valentine’s Day 💌 (1).jfif') no-repeat center center fixed;
-            background-size: cover;
-            color: #ff0066;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            background-color: rgba(255, 230, 230, 0.8);
-            padding: 50px;
-            margin: 50px auto;
-            max-width: 800px;
-            border-radius: 10px;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.5em;
-            margin-bottom: 40px;
-        }
-        .animation-container {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            margin: 0 auto;
-        }
-        .giraffe, .dinosaur {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-        .giraffe {
-            background-image: url('path/to/giraffe.png'); /* Replace with actual path to giraffe image */
-            animation: moveGiraffe 2s infinite;
-        }
-        .dinosaur {
-            background-image: url('path/to/dinosaur.png'); /* Replace with actual path to dinosaur image */
-            animation: moveDinosaur 2s infinite;
-        }
-        @keyframes moveGiraffe {
-            0%, 100% { left: 0; }
-            50% { left: 50px; }
-        }
-        @keyframes moveDinosaur {
-            0%, 100% { right: 0; }
-            50% { right: 50px; }
-        }
-        .slideshow-container {
-            position: relative;
-            max-width: 100%;
-            margin: auto;
-            display: none;
-            overflow: hidden;
-        }
-        .slides {
-            display: none;
-            animation: slideUp 1s forwards;
-        }
-        @keyframes slideUp {
-            from {
-                transform: translateY(100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-        .text {
-            color: #f2f2f2;
-            font-size: 15px;
-            padding: 8px 12px;
-            position: absolute;
-            bottom: 8px;
-            width: 100%;
-            text-align: center;
-        }
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-        .active, .dot:hover {
-            background-color: #717171;
-        }
-        .fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-        @-webkit-keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
-        }
-        @keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
-        }
-        .timer {
-            font-size: 1.5em;
-            margin-top: 20px;
-        }
-        .toggle-button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        .toggle-button:hover {
-            background-color: #0056b3;
-        }
-        .envelope {
-            position: relative;
-            width: 200px;
-            height: 150px;
-            margin: 20px auto;
-            background: url('C:/Users/User/Downloads/CUBICLE REFUGEE.jfif') no-repeat center center;
-            background-size: contain;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Merc Boyz</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Happy Valentine's Day!</h1>
-        <p>Wishing you a day filled with love and happiness.</p>
-        <div class="animation-container">
-            <div class="giraffe"></div>
-            <div class="dinosaur"></div>
-        </div>
-        <p>On this day of love, I want you to know that you will always have a special place in my heart. When I am with you, everything just falls into place. You are the rainbow after heavy rain. Every moment we have spent together since the 26th of September have been the best moments, irregardless of the ups and downs we have faced. I would still choose you a thousand times over. You are as perfect as brown sugar. The same way there was proof Tony had a heart, you are proof there's love and I LOVE YOU 3000. I may not see you everyday but I love you every single day. Even though we can't feel each other, I will still choose you as my forever. I am yours the way the sea belongs to the moon, the way the moon belongs to the sky, and even if the jealous stars break and shatter upon the milky way, I will still see heaven in your eyes.</p>
-        
-        <button class="toggle-button" onclick="toggleSlideshow()">Click me ❤️</button>
-        
-        <!-- Envelope container -->
-        <div class="envelope"></div>
-        
-        <!-- Slideshow container -->
-        <div class="slideshow-container" onclick="plusSlides(1)">
-            <!-- Full-width images with number and caption text -->
-            <div class="slides fade">
-                <img src="C:/Users/User/Downloads/download (7).jfif" style="width:100%">
-            </div>
-            <div class="slides fade">
-                <img src="C:/Users/User/Downloads/download (1).jfif" style="width:100%">
-            </div>
-            <div class="slides fade">
-                <img src="C:/Users/User/Downloads/download (2).jfif" style="width:100%">
-            </div>
-            <div class="slides fade">
-                <img src="C:/Users/User/Downloads/download (3).jfif" style="width:100%">
-            </div>
-            <div class="slides fade">
-                <img src="C:/Users/User/Downloads/download (4).jfif" style="width:100%">
-            </div>
-            <div class="slides fade">
-                <img src="C:/Users/User/Downloads/download (5).jfif" style="width:100%">
-            </div>
-            <div class="slides fade">
-                <img src="C:/Users/User/Downloads/download (6).jfif" style="width:100%">
-            </div>
-        </div>
-        <br>
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-            <span class="dot" onclick="currentSlide(4)"></span> 
-            <span class="dot" onclick="currentSlide(5)"></span> 
-            <span class="dot" onclick="currentSlide(6)"></span> 
-            <span class="dot" onclick="currentSlide(7)"></span> 
-        </div>
-        
-        <div class="timer" id="timer"></div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-content">
+      <h1>Welcome to Merc Boyz</h1>
+      <img src="images/MercBoyzLogo.jpg" alt="Merc Boyz Logo" class="logo"  />
+      <p>Your Trusted Mercedes-Benz Specialist</p>
+      <p>We provide high-quality repair and maintenance services for Mercedes-Benz vehicles.</p>
+      <p>Located in Germiston, South Africa</p>
+      <h2>Your Trusted Mercedes-Benz Specialist</h2>
+      <p>We provide high-quality repair and maintenance services for Mercedes-Benz vehicles.</p>
     </div>
+  </header>
 
-    <audio autoplay loop>
-        <source src="path/to/WeWereRaisedUnderGreySkies.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="booking.html">Book Now</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    <script>
-        let slideIndex = 0;
-        let slideshowContainer = document.querySelector('.slideshow-container');
-        let envelope = document.querySelector('.envelope');
-        let slideshowVisible = false;
+  <!-- Main Content Section -->
+  <section class="main-content">
+    <h2>Your Trusted Mercedes-Benz Specialist</h2>
+    <p>
+      Merc Boyz Pty Ltd is dedicated to providing high-quality repair and maintenance services for Mercedes-Benz vehicles. Explore our services, view our gallery, or book your next service appointment today!
+    </p>
+  </section>
 
-        function toggleSlideshow() {
-            slideshowVisible = !slideshowVisible;
-            slideshowContainer.style.display = slideshowVisible ? 'block' : 'none';
-            envelope.style.display = slideshowVisible ? 'none' : 'block';
-            if (slideshowVisible) {
-                showSlides();
-            }
-        }
+  <!-- Call-to-Action Section -->
+  <section class="cta">
+    <h2>Ready to Book Your Service?</h2>
+    <p>Click below to schedule your appointment today!</p>
+    <a href="booking.html" class="cta-button">Book Now</a>
+  </section>
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Merc Boyz Pty Ltd</p>
+  </footer>
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("slides");
-            let dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-        }
-
-        // Timer
-        function updateTimer() {
-            const startDate = new Date('September 26, 2024');
-            const now = new Date();
-            const diff = now - startDate;
-
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-            document.getElementById('timer').innerHTML = `Time since September 26, 2024: ${days}d ${hours}h ${minutes}m ${seconds}s`;
-        }
-
-        setInterval(updateTimer, 1000);
-    </script>
 </body>
 </html>

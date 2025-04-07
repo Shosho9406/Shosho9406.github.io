@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Merc Boyz</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="header-logo">
+      <img src="images/MercBoyzLogo.jpg" alt="Merc Boyz Logo" class="logo">
+    </div>
+    <h1 class="header-title">Merc Boyz Pty Ltd</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="booking.html">Book Now</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <main>
+    <section class="contact-section">
+      <h2>Get in Touch</h2>
+      <p>We’d love to hear from you! Reach out to us using the details below or fill out the contact form.</p>
+
+      <!-- Contact Details -->
+      <div class="contact-details">
+        <p><strong>Location:</strong> Germiston, South Africa</p>
+        <p><strong>Phone:</strong> +27 71 234 5678</p>
+        <p><strong>Email:</strong> <a href="mailto:info@mercboyz.co.za">info@mercboyz.co.za</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/27712345678">Chat with us</a></p>
+      </div>
+
+      <!-- Contact Form -->
+      <form action="server/contact.php" method="POST" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2025 Merc Boyz Pty Ltd</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Service - Merc Boyz</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
+  <!-- Header Section -->
+  <header style="background-color: #333; color: white; padding: 20px; text-align: center;">
+    <h1 style="margin: 0;">Book Your Service</h1>
+    <img src="images/MercBoyzLogo.jpg" alt="Merc Boyz Logo" style="width: 80px; height: auto; border-radius: 50%; margin-top: 10px;">
+    <h2 style="margin: 0; font-size: 1.5rem;">Your Trusted Mercedes-Benz Specialist</h2>
+    <p style="color: #555; line-height: 1.6;">Schedule your next service appointment with ease.</p>
+    <!-- Navigation Bar -->
+    <nav style="background-color: #444; padding: 15px 0;">
+      <ul style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; align-items: center; gap: 20px; font-size: 1.2rem;">
+        <li><a href="index.html" style="color: white; text-decoration: none; padding: 10px 15px; border-radius: 5px;">Home</a></li>
+        <li><a href="about.html" style="color: white; text-decoration: none; padding: 10px 15px; border-radius: 5px;">About</a></li>
+        <li><a href="services.html" style="color: white; text-decoration: none; padding: 10px 15px; border-radius: 5px;">Services</a></li>
+        <li><a href="gallery.html" style="color: white; text-decoration: none; padding: 10px 15px; border-radius: 5px;">Gallery</a></li>
+        <li><a href="booking.html" style="color: white; text-decoration: none; padding: 10px 15px; border-radius: 5px; background-color: #007BFF;">Book Now</a></li>
+        <li><a href="contact.html" style="color: white; text-decoration: none; padding: 10px 15px; border-radius: 5px;">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Booking Form Section -->
+  <section style="background-color: #f4f4f4; padding: 20px; max-width: 600px; margin: 20px auto; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #333; text-align: center;">Schedule Your Service</h2>
+    <p style="color: #555; text-align: center; margin-bottom: 20px;">Fill out the form below to book your appointment with us.</p>
+    <form action="server/booking.php" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+      <label for="name" style="color: #333;">Name:</label>
+      <input type="text" name="name" id="name" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label for="email" style="color: #333;">Email:</label>
+      <input type="email" name="email" id="email" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label for="phone" style="color: #333;">Phone Number:</label>
+      <input type="tel" name="phone" id="phone" required placeholder="e.g., +27 71 234 5678" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label for="date" style="color: #333;">Preferred Date:</label>
+      <input type="date" name="date" id="date" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label for="time" style="color: #333;">Preferred Time:</label>
+      <input type="time" name="time" id="time" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label for="service" style="color: #333;">Service Type:</label>
+      <select name="service" id="service" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        <option value="" disabled selected>Select a service</option>
+        <option value="diagnostics">Diagnostics</option>
+        <option value="brakes">Brake Service</option>
+        <option value="transmission">Transmission</option>
+        <option value="oil-change">Oil Change</option>
+        <option value="ac-repair">Air Conditioning Repair</option>
+      </select>
+
+      <label for="comments" style="color: #333;">Additional Comments:</label>
+      <textarea name="comments" id="comments" rows="4" placeholder="Any specific issues or requests?" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+
+      <button type="submit" style="background-color: #007BFF; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer style="background-color: #333; color: white; text-align: center; padding: 10px 0;">
+    <p style="margin: 0;">&copy; 2025 Merc Boyz Pty Ltd</p>
+  </footer>
+
+</body>
+</html>
